@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#slider {
+  background: url("https://media.giphy.com/media/pVGsAWjzvXcZW4ZBTE/giphy.gif")
+    no-repeat;
+  height: 50vh;
+  width: 1000px;
+}

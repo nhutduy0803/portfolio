@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/font/fontawesome-free-6.0.0-web/"
+    />
+  </head>
+  <body>
+    <div id="slider">
+      <img
+        src="https://media.giphy.com/media/5e25aUTZPcI94uMZgv/giphy.gif"
+        alt=""
+      />
+    </div>
+    <button class="play" onclick="playsong()">
+      Audio <i class="fa-solid fa-circle"></i>
+    </button>
+    <audio src="./mp3/Massive Attack  Paradise Circus.mp3" id="song"></audio>
+    <div class="radio"></div>
+    <div class="quotes-css">
+      <!-- <img
+        src="https://media.giphy.com/media/kdiLau77NE9Z8vxGSO/giphy.gif"
+        alt=""
+      /> -->
+    </div>
+    <div id="cusor"></div>
+    <script>
+      var cusor = document.getElementById("cusor");
+      document.addEventListener("mousemove", function (e) {
+        var x = e.clientX;
+        var y = e.clientY;
+        cusor.style.left = x + "px";
+        cusor.style.top = y + "px";
+      });
+    </script>
+    <script src="./main.js"></script>
+  </body>
+</html>

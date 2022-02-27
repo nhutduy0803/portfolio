@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#slider {
+  height: 100vh;
+  width: 100%;
+}
+
+#slider img {
+  width: 110%;
+  height: 110%;
+}
+
+.play {
+  width: 70px;
+  border-radius: 30px;
+  height: 30px;
+  background: #6f5cf1;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 30px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* .radio {
+  transform: translate(-50%, -50%);
+  top: 250px;
+  position: absolute;
+  left: 50%;
+  width: 550px;
+  height: 350px;
+  opacity: 0.7;
+}
+
+.radio img {
+  width: 100%;
+  border-radius: 10%;
+  height: 100%;
+  padding: 10px;
+  border: 2px solid #6f5cf1;
+}
+
+.radio::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.radio::before {
+  position: absolute;
+  content: " ";
+  width: 130px;
+  height: 150%;
+  top: -50px;
+  background: linear-gradient(#00ccff, #d400d4);
+  left: 200px;
+  animation: quotes 4s linear infinite;
+}
+
+@keyframes quotes {
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+.quotes-css {
+  background-color: #fff;
+  width: 550px;
+  height: 350px;
+  margin-left: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  top: -500px;
+}
+
+.quotes-css::after {
+  content: " ";
+  position: absolute;
+  background: url("https://media.giphy.com/media/kdiLau77NE9Z8vxGSO/giphy.gif");
+  /* width: 98.5%;
+  height: 94%; */
+  width: 98%;
+  height: 97%;
+  inset: 5px;
+  border-radius: 20px;
+}
+
+.quotes-css::before {
+  position: absolute;
+  content: " ";
+  width: 130px;
+  height: 380%;
+  background: linear-gradient(#00ccff, #d400d4);
+  left: 200px;
+  animation: quotes 4s linear infinite;
+}
+@keyframes quotes {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.quotes-css img {
+  width: 100%;
+  border-radius: 10%;
+  height: 100%;
+  padding: 10px;
+  border: 2px solid #6f5cf1;
+}

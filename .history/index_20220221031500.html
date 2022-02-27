@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/font/fontawesome-free-6.0.0-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/font/Oxygen_Mono,Poppins.zip" />
+  </head>
+  <body>
+    <div id="slider">
+      <img
+        src="https://media.giphy.com/media/5e25aUTZPcI94uMZgv/giphy.gif"
+        alt=""
+      />
+    </div>
+    <div class="contact">
+      <p>Gmail: nhutduy0803@gmai.com</p>
+    </div>
+    <div class="background-1">
+      <button class="play" onclick="playsong()">
+        Audio <i class="fa-solid fa-circle"></i>
+      </button>
+      <audio src="./mp3/Massive Attack  Paradise Circus.mp3" id="song"></audio>
+      <div class="radio"></div>
+      <div class="quotes-css">
+        <!-- <img
+        src="https://media.giphy.com/media/kdiLau77NE9Z8vxGSO/giphy.gif"
+        alt=""
+      /> -->
+      </div>
+      <h2>
+        HELLO, <br />
+        WORLD !
+      </h2>
+      <h3 id="text">
+        <!-- <span> h</span> I’m NGUYEN NHUT DUY <br />
+      I’m a creative front-end dev.<br />
+      I’m a creative front-end dev. -->
+      </h3>
+    </div>
+    <div class="tv-code">
+      <img
+        src="https://media.giphy.com/media/V4NSR1NG2p0KeJJyr5/giphy.gif"
+        alt=""
+      />
+    </div>
+    <div class="code-it">
+      <img
+        src="https://media.giphy.com/media/Y1vohJMVMtjSQxmUot/giphy.gif"
+        alt=""
+      />
+    </div>
+    <div class="background-2">
+      <div class="img-background-2">
+        <img
+          src="https://media.giphy.com/media/ckr4W2ppxPBeIF8dx4/giphy.gif"
+          alt=""
+        />
+      </div>
+
+      <div class="circle-right">
+        <div class="circle-right-child" onclick="clickright()">
+          <img
+            src="https://media.giphy.com/media/3oEduLeaoCojUXv3Lq/giphy.gif"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <script>
+      var i = 0,
+        text;
+      text =
+        "I’m NGUYEN NHUT DUY  I a creative front-end dev. I currently learning web development";
+      function typing() {
+        if (i < text.length) {
+          document.getElementById("text").innerHTML += text.charAt(i);
+          i++;
+          setTimeout(typing, 70);
+        }
+      }
+      typing();
+    </script>
+    <script src="./main.js"></script>
+  </body>
+</html>
