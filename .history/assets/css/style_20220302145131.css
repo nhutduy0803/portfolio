@@ -957,7 +957,7 @@ h3 span {
 .reponsive img {
   width: 100%;
   height: 100%;
-  /* filter: blur(2.5px); */
+  filter: blur(2.5px);
 }
 
 .reponsive h3 {

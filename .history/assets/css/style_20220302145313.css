@@ -207,6 +207,7 @@ h3 span {
 .img-background-2.opacity-background-2 {
   opacity: 1;
   transition: 3.5s;
+  filter: blur(2px);
 }
 
 .circle-right {
