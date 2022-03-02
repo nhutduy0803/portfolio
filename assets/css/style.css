@@ -952,6 +952,7 @@ h3 span {
   height: 110vh;
   background-color: #5f68fe;
   z-index: 25;
+  bottom: 0;
 }
 
 .reponsive img {
@@ -978,6 +979,15 @@ h3 span {
 
 @media screen and (min-width: 1024px) {
   .reponsive {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .background-1,
+  .background-2,
+  .background-3,
+  .contact {
     display: none;
   }
 }
